@@ -1,6 +1,6 @@
 import random
-from lyricsDB import allsongs
-import twitter as twt
+# from lyricsDB import allsongs
+# import twitter as twt
 import time
 
 
@@ -26,5 +26,6 @@ randomNumbers = [25, 80, 198, 85, 128, 10, 103, 88, 120, 170, 42, 206, 34, 69, 1
 # # print(index)
 
 for x in randomNumbers:
-    twt.generateTweet(generateRandomLines(allsongs, x).lower())
+    # twt.generateTweet(generateRandomLines(allsongs, x).lower())
+    print("hello")
     time.sleep(3600)
