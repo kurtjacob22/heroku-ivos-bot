@@ -21,5 +21,5 @@ randomNumbers = [25, 80, 198, 85, 128, 10, 103, 88, 120, 170, 42, 206, 34, 69, 1
 
 for x in randomNumbers:
     twt.generateTweet(generateRandomLines(allsongs, x).lower())
-    time.sleep(5)
+    time.sleep(3600)
 

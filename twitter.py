@@ -16,5 +16,5 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 user = api.me()
 
 def generateTweet(tweet):
-    # api.update_status(tweet)
+    api.update_status(tweet)
     print(tweet)
