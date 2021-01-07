@@ -8,7 +8,13 @@ import time
 def generateRandomLines(lyrics, index):
     return lyrics[index]
     
+def loopRandom():
+    for x in range(5):
+        print(x)
         
+def loopRandom2():
+    for x in range(5):
+        print(x)
         
 randomNumbers = [25, 80, 198, 85, 128, 10, 103, 88, 120, 170, 42, 206, 34, 69, 189, 161, 74, 15, 107, 178, 199, 123, 130, 183, 116, 132, 167, 22, 208, 109, 7, 45, 163, 83, 202, 20, 62, 173, 44, 57, 135, 24, 186, 6, 172, 192, 111, 86, 108, 31, 194, 100, 126, 21, 39, 140, 56, 101, 145, 211, 
 141, 46, 212, 58, 12, 115, 18, 78, 143, 70, 41, 125, 3, 105, 99, 176, 8, 50, 64, 204, 89, 33, 52, 14, 104, 177, 2, 168, 59, 72, 60, 138, 
@@ -16,10 +22,9 @@ randomNumbers = [25, 80, 198, 85, 128, 10, 103, 88, 120, 170, 42, 206, 34, 69, 1
 16, 144, 1, 51, 4, 118, 30, 55, 151, 76, 158, 131, 179, 184, 53, 119, 79, 96, 66, 17, 152, 98, 165, 139, 201, 49, 160, 40, 148, 155, 28, 
 124, 175, 27, 95, 196, 213, 195, 43, 65, 193, 5, 92, 166, 110, 146, 164, 11, 203, 133, 169, 114, 214, 68, 113, 209, 94, 137, 102, 106, 29, 181]
 
-# index = random.sample(range(len(allsongs)), len(allsongs))
-# print(index)
+# # index = random.sample(range(len(allsongs)), len(allsongs))
+# # print(index)
 
 for x in randomNumbers:
     twt.generateTweet(generateRandomLines(allsongs, x).lower())
     time.sleep(3600)
-
